@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115340283-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115340283-1');
+</script>
+
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"/>
+<title>image-2-image</title>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<link rel="stylesheet" type="text/css" href="image-2-image.css">
+<script src="image-2-image.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+
+<body onload="init()">
+<div id="sh_container">
+
+  <div class="stem">Match the following puppet construction ideas to a coordinating lesson unit theme by placing puppets on the appropriate stage.</div>
+
+  <div class="jumbotron sh_jumbotron">
+
+    <div class="sh_wrapper clearfix">
+      <div class="target_pile clearfix"></div>
+      <div class="drag_pile"></div>
+      <br/>
+    </div>
+    <div class="sh_correct"> <span class="glyphicon glyphicon-ok sh_green"></span><span style="padding-left:5px;"><strong>Great job!</strong> You have completed this activity.</span></div>
+    <div class="sh_incorrect"> <span class="glyphicon glyphicon-remove sh_red"></span><span style="padding-left:5px;"><strong>Oops!</strong> Try again.</span></div>
+    <div style="float: right; margin-right: 3%;">
+      <button type="button" class="btn btn-default resetbtn" value="reset" onClick="init()">Reset</button>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+#am-container {
+  max-width: 1100px !important;
+  max-height: 800px !important;
+  margin: 0 auto;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  cursor: default;
+  transition: 0.6s ease-in-out !important;
+}
+
+.am_h1 {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.hovered {
+ /*  background: lightblue; */
+  opacity: .1;
+/*   border-radius: 70% !important; */
+  width: 10%;
+ 
+  background-image: url(dev-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.am_img {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  text-align: center;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 100%;
+}
+
+.fren-group div {
+  display: inline-block;
+/*   width: 100%;
+  height: 100%; */
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+/*   background: url(http://hop.ie/balls/images/tennisball.png) no-repeat; */
+  background-size: 100%;
+  
+}
+.fren-group div:before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+/*   background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+  -webkit-filter: blur(5px);
+  z-index: 2; */
+}
+.fren-group div:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  background: radial-gradient(circle at 50% 30%, rgba(245, 237, 48, 0), #4b5266 50%, #a2a2c2 100%);
+}
+.fren-group div .shadow {
+    position: absolute;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-transform: rotateX(90deg) translateZ(-160px);
+    transform: rotateX(90deg) translateZ(-160px);
+    z-index: 1; }
+
+.homie-0 {
+  width: 85.6%;
+}
+
+.homie-1 {
+  width: 100%;
+}
+
+.hs1 div img {
+  top: -46.5%;
+  left: 30%;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+}
+
+.fren-group {
+  display: block;
+  white-space: nowrap !important;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-width: inherit;
+  text-align: left;
+  padding: 5%;
+  padding-top: 1%;
+  margin-top: 5px !important;
+}
+
+.fren-group div.hover {
+  cursor: pointer;
+}
+
+.b4-pickup {
+  display: inline-block !important;
+  cursor: pointer;
+  color: #000 !important;
+  white-space: nowrap;
+  vertical-align: bottom;
+  width: 10%;
+}
+
+.fren-group span.hover {
+  cursor: pointer;
+}
+
+.dropped {
+  position: static !important;
+  width: 71.7% !important;
+}
+/* .hs1 div img {
+  margin-top: -20vh;
+} */
+
+.droppedOn {
+  position: absolute !important;
+}
+
+.img-wrap {
+  width: 100%;
+  padding: 1%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hotspot-img {
+  /*  max-height: 320px;*/
+}
+
+.hs0,
+.hs1,
+.hs2 {
+  /*  background-color: #ffd700;*/
+  /*  border: 1px inset yellow;*/
+  /*  opacity: .4;*/
+  /*  background-color: transparent;*/
+  width: 5%;
+  position: absolute;
+  cursor: pointer;
+  /*   z-index: 5; */
+  transition: 0.6s ease-in-out;
+  border-radius: 50%;
+  height: 38% !important;
+}
+
+/* Hotspots*/
+
+.hs0 {
+  height: 48%;
+  top: 35%;
+  left: 10%;
+  width: 26%;
+}
+
+.hs1 {
+  height: 41%;
+  top: 62%;
+  left: 31%;
+  width: 31%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(golf-tee.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.hs2 {
+  height: 48%;
+  top: 28%;
+  left: 64.8%;
+  width: 26%;
+}
+
+/* .mario-last {
+  position: absolute !important;
+  right: 0 !important;
+  top: -70% !important;
+  left: 0 !important;
+  z-index: 1 !important;
+  width: 5%;
+  -webkit-transition: all 0.1s ease-in !important;
+  -moz-transition: all 0.1s ease-in !important;
+  -o-transition: all 0.1s ease-in !important;
+  transition: all 0.1s ease-in !important;
+} */
+
+
+.center {
+  -webkit-perspective: 500;
+          perspective: 500;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.7);
+}
+
+.globe {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: -75%;
+          transform-style: preserve-3d;
+          animation: backspin 5s linear infinite;
+/*           animation-fill-mode: forwards; */
+/*           transition: width 1s ease-in-out; */
+     /*      position: static !important; */
+        /*   width: 60%; */
+        /*   margin-top: -48%; */
+}
+.globe .side {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+
+/*   width: 21vh;
+  height: 21vh;  */
+
+  z-index:1111111111;
+/*   border-radius: 50%; */
+  background-repeat: no-repeat;
+/*   background-position: center;
+ */  background-size: contain;
+
+  
+}
+.globe .side-1 {
+  background-image: url('planet-1.png');
+          transform: rotateX(30deg);
+}
+.globe .side-2 {
+  background-image: url('planet-2.png');
+          transform: rotateX(60deg);
+}
+.globe .side-3 {
+  background-image: url('planet-3.png');
+          transform: rotateX(90deg);
+}
+.globe .side-4 {
+  background-image: url('planet-1.png');
+          transform: rotateX(120deg);
+}
+.globe .side-5 {
+  background-image: url('planet-2.png');
+          transform: rotateX(150deg);
+}
+.globe .side-6 {
+  background-image: url('planet-3.png');
+          transform: rotateX(180deg);
+}
+@media only screen and (max-width: 750px)  {
+  .center {
+    transform: scale(0.6);
+    margin-top: -21vw;
+    margin-left: -2vw;
+}
+}
+@media only screen and (max-width: 600px) and (min-width: 200px)  {
+  .center {
+    transform: scale(0.4);
+    margin-top: -29vw;
+    margin-left: -6vw;
+}
+/*   .hs1 div img {
+    margin-top: -70%;
+} */
+/*  .globe {
+    margin-top: -134%;
+    right: 50%;
+} */
+/* 
+  .side {
+    transition: 0.6s ease-in-out;
+  }
+  .globe .side-1 {
+            transform: rotateX(30deg) scale(0.6);
+  }
+  .globe .side-2 {
+            transform: rotateX(60deg) scale(0.6);
+  }
+  .globe .side-3 {
+            transform: rotateX(90deg) scale(0.6);
+  }
+  .globe .side-4 {
+            transform: rotateX(120deg) scale(0.6);
+  }
+  .globe .side-5 {
+            transform: rotateX(150deg) scale(0.6);
+  }
+  .globe .side-6 {
+            transform: rotateX(180deg) scale(0.6);
+  } */
+  
+}
+@keyframes backspin {
+  0% {
+
+   transform: rotateY(10deg) rotateX(360deg) rotateZ(0deg);
+            
+           
+
+  }
+
+}
+
+.hs1 div img {
+  z-index: 11111111 !important;
+  /*  width: 90% !important;*/
+  /*  -webkit-transition: all 0.5s ease-in !important;
+  -moz-transition: all 0.5s ease-in !important;
+  -o-transition: all 0.5s ease-in !important;
+  transition: all 0.5s ease-in !important;*/
+}
+
+.overlay {
+  
+  opacity: .5;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.homie-overlay {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .5;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bh-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px !important;
+  color: #000 !important;
+  background-color: lightgreen !important;
+  border: 1px #333 outset !important;
+  outline: 0 !important;
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  margin-right: 2%;
+  padding: 3px 5px !important;
+}
+
+.bh-btn span {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.bye-bye {
+  right: 56%;
+  top: 55%;
+  position: absolute;
+  font-size: 15px;
+  color: #000 !important;
+}
+
+.resetbtn {
+  font-size: 20px !important;
+  color: #190977 !important;
+  background-color: #28e802 !important;
+  border: 1px #07da71 outset !important;
+  outline: 0 !important;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  bottom: 3%;
+  right: 2%;
+  padding: 3px 5px !important;
+}
+
+.resetbtn:hover {
+  transform: scale(1.1); 
+  transition: 0.5s ease-in-out;
+}
+
+.resetbtn svg {
+  vertical-align: 0;
+}
+
+.am_red {
+  color: #df0000;
+}
+
+.am_green {
+  color: #529452;
+}
+
+/* Max Width 565 */
+
+@media only screen and (max-width: 565px) {
+  .bh-btn {
+    font-size: 13px !important;
+  }
+  .bh-btn span {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .bye-bye {
+    font-size: 12px;
+  }
+  .resetbtn {
+    font-size: 20px !important;
+  }
+}
+
+/* Max Width 400 */
+
+@media only screen and (max-width: 400px) {
+  .bh-btn {
+    font-size: 12px !important;
+  }
+  .bh-btn span {
+    font-size: 12px;
+  }
+  .bye-bye {
+    font-size: 10px;
+  }
+  .resetbtn {
+    font-size: 15px !important;
+  }
+}

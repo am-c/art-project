@@ -1,0 +1,517 @@
+/* Bar Graph Quiz */
+
+#sh_container {
+  max-width: 680px !important;
+  height: 454px !important;
+  margin: auto 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  cursor: default;
+  padding-left: 5px;
+  padding-right: 5px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-drag: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.sh_wrapper {
+  padding-top: 3%;
+}
+
+.sh_question {
+  margin: 0 auto;
+  padding: 2%;
+  text-align: center;
+  /*  border: 1px solid black;*/
+  /*  transition: 0.8s ease-in-out;*/
+}
+
+.sh_question p {
+  font-size: 13px !important;
+  font-weight: bold !important;
+}
+
+
+/* Buttons */
+
+.sh_btn {
+  padding: 4px 22px;
+  border: 1px outset darkgray !important;
+  background-color: #ccc !important;
+  color: #000 !important;
+  border-color: #A7A4A4 !important;
+}
+
+.sh_btn:hover {
+  background-color: #dedcdc;
+  border-color: #A7A4A4;
+  color: #676666;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.done-btn {
+  float: left;
+  position: relative;
+  bottom: -10%;
+  left: 2%;
+}
+
+.reset-btn {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  z-index: 1;
+}
+
+
+/* Buttons End */
+
+
+/*Custom Checkbox*/
+
+.sh_checkbox {
+  display: none;
+}
+
+.sh_checkbox+label {
+  background-color: #3a79a3;
+  padding: 7px;
+  margin-bottom: 0;
+  margin-right: 4px;
+  top: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.sh_checkbox+label:hover {
+  background-color: #89b7d3;
+  cursor: pointer;
+}
+
+.sh_checkbox+label:active,
+.sh_checkbox:checked+label:active {
+  /*	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);*/
+}
+
+.sh_checkbox:checked+label {
+  background-color: #eee;
+  border: 1px solid #adb8c0;
+  color: #000;
+  padding: 6px;
+}
+
+.sh_checkbox:checked+label:after {
+  content: '';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #99a1a7;
+}
+
+input[type=checkbox][disabled] {
+  cursor: default !important;
+}
+
+.cb_wrap {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.sh_cbxs {
+  font-weight: bold;
+  text-align: left;
+  bottom: -10px;
+  position: relative;
+  left: -50%;
+  font-size: 13px;
+}
+
+.sh_cbxs label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+/*Custom Checkbox*/
+
+.sh_remove {
+  padding: 0 !important;
+}
+
+
+/*BAR GRAPH*/
+
+.sh_h1,
+.top-text {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 2%;
+  transition: 0.8s ease-in-out;
+}
+
+.top-text {
+  min-height: 36px;
+}
+
+.bar-graph {
+  width: 100%;
+  list-style-type: none;
+  max-width: 650px;
+  text-align: center;
+  /* margin-top: -5%;*/
+}
+
+.bar-group li span {
+  width: 100%;
+  position: absolute;
+  bottom: -3em;
+  left: 0;
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  white-space: nowrap;
+}
+
+.sh-subtext {
+  transition: 0.8s ease-in-out;
+  font-size: 11px;
+  float: left;
+  margin: 1%;
+}
+
+.bar-graph,
+.y-ax {
+  float: left;
+  display: inline-block;
+  clear: both;
+  font-size: 10px;
+  position: relative;
+}
+
+.y-position {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  clear: both;
+}
+
+.m-top {
+  margin-top: 4%;
+  right: -7%;
+}
+
+.m-first {
+  right: -7%;
+}
+
+.bar-graph .bar-group {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  width: 85%;
+  /*width: 75%;*/
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 0 1px #444;
+}
+
+.bar-graph .bar-group li {
+  display: table-cell;
+  width: 100px;
+  padding-top: 64%;
+  /*	padding-top: 70%;*/
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+
+.bar-graph .bar-group li .bar {
+  display: block;
+  width: 70%;
+  margin-left: 15%;
+  /* background-color: #49E;*/
+  position: absolute;
+  bottom: 0;
+}
+
+.bar-graph .bar-group li .bar:hover {
+  /* background: #5AE;*/
+  opacity: .8;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+
+.bar-graph .bar-group li .bar:hover:before {
+  color: #fff;
+  content: attr(data-percentage) '%';
+  position: relative;
+  top: 5%;
+  font-size: 15px;
+}
+
+.bar-graph .bar-group li span {
+  width: 100%;
+  position: absolute;
+  bottom: -3em;
+  left: 0;
+  text-align: center;
+}
+
+.bar0 {
+  background: green;
+  /* IE10+ */
+  background: -ms-linear-gradient(top, #35B735 0%, #104D18 100%);
+  /* Mozilla Firefox */
+  background: -moz-linear-gradient(top, #35B735 0%, #104D18 100%);
+  /* Opera */
+  background: -o-linear-gradient(top, #35B735 0%, #104D18 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #35B735), color-stop(100, #104D18));
+  /* Webkit (Chrome 11+) */
+  background: -webkit-linear-gradient(top, #35B735 0%, #104D18 100%);
+  /* W3C Markup */
+  background: linear-gradient(to bottom, #35B735 0%, #104D18 100%);
+}
+
+.bar1 {
+  background: blue;
+  /* IE10+ */
+  background: -ms-linear-gradient(top, #337AB7 0%, #0F1F4D 100%);
+  /* Mozilla Firefox */
+  background: -moz-linear-gradient(top, #337AB7 0%, #0F1F4D 100%);
+  /* Opera */
+  background: -o-linear-gradient(top, #337AB7 0%, #0F1F4D 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #337AB7), color-stop(100, #0F1F4D));
+  /* Webkit (Chrome 11+) */
+  background: -webkit-linear-gradient(top, #337AB7 0%, #0F1F4D 100%);
+  /* W3C Markup */
+  background: linear-gradient(to bottom, #337AB7 0%, #0F1F4D 100%);
+}
+
+.bar2 {
+  background: yellow;
+  /* IE10+ */
+  background: -ms-linear-gradient(top, #dece45 0%, #696122 100%);
+  /* Mozilla Firefox */
+  background: -moz-linear-gradient(top, #dece45 0%, #696122 100%);
+  /* Opera */
+  background: -o-linear-gradient(top, #dece45 0%, #696122 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dece45), color-stop(100, #696122));
+  /* Webkit (Chrome 11+) */
+  background: -webkit-linear-gradient(top, #dece45 0%, #696122 100%);
+  /* W3C Markup */
+  background: linear-gradient(to bottom, #dece45 0%, #696122 100%);
+}
+
+.bar3 {
+  background: purple;
+  /* IE10+ */
+  background: -ms-linear-gradient(top, #3833B7 0%, #18124D 100%);
+  /* Mozilla Firefox */
+  background: -moz-linear-gradient(top, #3833B7 0%, #18124D 100%);
+  /* Opera */
+  background: -o-linear-gradient(top, #3833B7 0%, #18124D 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3833B7), color-stop(100, #18124D));
+  /* Webkit (Chrome 11+) */
+  background: -webkit-linear-gradient(top, #3833B7 0%, #18124D 100%);
+  /* W3C Markup */
+  background: linear-gradient(to bottom, #3833B7 0%, #18124D 100%);
+}
+
+.bar4 {
+  background: red;
+  /* IE10+ */
+  background: -ms-linear-gradient(top, #B73935 0%, #4D1311 100%);
+  /* Mozilla Firefox */
+  background: -moz-linear-gradient(top, #B73935 0%, #4D1311 100%);
+  /* Opera */
+  background: -o-linear-gradient(top, #B73935 0%, #4D1311 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #B73935), color-stop(100, #4D1311));
+  /* Webkit (Chrome 11+) */
+  background: -webkit-linear-gradient(top, #B73935 0%, #4D1311 100%);
+  /* W3C Markup */
+  background: linear-gradient(to bottom, #B73935 0%, #4D1311 100%);
+}
+
+
+/*END BAR GRAPH*/
+
+
+/* Max Width 680 */
+
+@media only screen and (max-width: 680px) {
+  .sh_h1,
+  .done-btn {
+    font-size: 12.5px !important;
+  }
+  .sh_cbxs,
+  .top-text,
+  .reset-btn {
+    font-size: 12px;
+  }
+  .reset-btn {
+    right: 10%;
+    top: -10%;
+  }
+}
+
+
+/* Max Width 645 */
+
+@media only screen and (max-width: 645px) {
+  .m-top {
+    margin-top: 4.2%;
+  }
+}
+
+
+/* Max Width 605 */
+
+@media only screen and (max-width: 605px) {
+  .top-text {
+    min-height: 40px;
+  }
+  .m-top {
+    margin-top: 4.3%;
+  }
+}
+
+
+/* Max Width 556 */
+
+@media only screen and (max-width: 556px) {
+  .sh_question p,
+  .sh_cbxs,
+  .sh_h1,
+  .top-text,
+  .done-btn,
+  .sh_btn,
+  .reset-btn {
+    font-size: 11px !important;
+  }
+  .bar-group li span {
+    font-size: 9px;
+  }
+  .bar-graph .bar-group li .bar:hover:before {
+    font-size: 13px;
+  }
+}
+
+
+/* Max Width 519 */
+
+@media only screen and (max-width: 519px) {
+  .top-text {
+    min-height: 80px;
+  }
+  .bar-graph,
+  .y-ax {
+    font-size: 9px;
+  }
+  .m-top {
+    margin-top: 4.25%;
+  }
+}
+
+
+/* Max Width 462 */
+
+@media only screen and (max-width: 462px) {
+  .m-top {
+    margin-top: 4.1%;
+  }
+}
+
+
+/* Max Width 440 */
+
+@media only screen and (max-width: 440px) {
+  .bar-graph .bar-group li .bar:hover:before {
+    font-size: 12px;
+  }
+  .m-top {
+    margin-top: 4%;
+  }
+}
+
+
+/* Max Width 422 */
+
+@media only screen and (max-width: 422px) {
+  .reset-btn {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 120%;
+  }
+}
+
+
+/* Max Width 382 */
+
+@media only screen and (max-width: 382px) {
+  .m-top {
+    margin-top: 3.9%;
+  }
+}
+
+
+/* Max Width 351 */
+
+@media only screen and (max-width: 351px) {
+  .m-top {
+    margin-top: 3.7%;
+  }
+}
+
+
+/* Max Width 336 */
+
+@media only screen and (max-width: 336px) {
+  .bar-graph,
+  .y-ax {
+    font-size: 8px;
+  }
+  .bar-graph .bar-group li .bar:hover:before {
+    font-size: 10px;
+  }
+  .m-top {
+    margin-top: 3.6%;
+  }
+}
+
+
+/* Max Width 300 */
+
+@media only screen and (max-width: 300px) {
+  .bar-graph .bar-group li .bar:hover:before {
+    font-size: 12px;
+  }
+  .bar-group li span {
+    font-size: 8px;
+  }
+  .bar-graph .bar-group li .bar:hover:before {
+    font-size: 9px;
+  }
+  .m-top {
+    margin-top: 3.5%;
+  }
+}

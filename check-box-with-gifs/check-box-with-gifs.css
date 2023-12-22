@@ -1,0 +1,187 @@
+#sh_container {
+  max-width: 680px !important;
+  max-height: 454px !important;
+  margin: auto 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  cursor: default;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-drag: none;
+  user-select: none;
+}
+
+.stem {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.sh_jumbotron {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+  padding-top: 0 !important;
+  padding-bottom: 48px !important;
+  position: relative !important;
+  overflow: hidden;
+}
+
+.sh_question {
+  font-weight: bold;
+  float: right;
+  text-align: left;
+  margin-top: 1%;
+  width: 100%;
+}
+
+.cb_img,
+.cb_accel,
+.cb_brake {
+  max-width: 90%;
+}
+
+.cb_accel {
+  display: none;
+}
+
+.cb_brake {
+  display: none;
+}
+
+.accel_btn,
+.brake_btn,
+.re_btn {
+  float: left;
+  background-color: #333333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px !important;
+  padding: 2px 10px !important;
+  margin-right: 2%;
+  margin-top: 1px;
+  clear: both;
+}
+
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input[type=checkbox][disabled] {
+  cursor: default !important;
+}
+
+input[type=checkbox] {
+  margin: 4px 4px 4px !important;
+}
+
+.sh_cbxs {
+  display: block;
+  max-width: 85%;
+  height: auto;
+  white-space: nowrap;
+  font-weight: bold;
+/*  margin-bottom: 0 !important;*/
+  clear: both;
+}
+
+.right-answer,
+.wrong-answer,
+/*.wrong-twice,*/
+.sh_tool-tip {
+  display: none;
+  font-size: 12px !important;
+}
+
+.sh_next-question {
+  display: none;
+}
+
+.resetbtn:hover {
+  background: #CCCBCB;
+}
+
+.sh_alert {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 5px !important;
+  color: #000;
+}
+
+.sh_red {
+  color: #df0000;
+}
+
+.sh_green {
+  color: #529452;
+}
+
+.sh_yellow {
+  color: #f0ad4e;
+}
+
+.sh_remove {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* Max Width 549 */
+
+@media only screen and (max-width: 549px) {
+  .stem {
+    font-size: 11px;
+  }
+  .accel_btn,
+  .brake_btn,
+  .re_btn {
+    font-size: 9px !important;
+    margin-right: 1%;
+  }
+}
+
+
+/* Max Width 397 */
+
+@media only screen and (max-width: 397px) {
+  .sh_question {
+    margin-top: 1%;
+  }
+  .accel_btn,
+  .brake_btn,
+  .re_btn {
+    font-size: 8px !important;
+    padding: 0 4px !important;
+    margin-right: .5%;
+  }
+  .sh_alert {
+    font-size: 11px;
+  }
+}
+
+
+/* Max Width 300 */
+
+@media only screen and (max-width: 300px) {
+  .accel_btn,
+  .brake_btn,
+  .re_btn {
+    font-size: 7px !important;
+  }
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115340283-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115340283-1');
+</script>
+
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"/>
+<title>Checkbox Template | Gifs</title>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="check-box-with-gifs.js"></script>
+<link rel="stylesheet" type="text/css" href="check-box-with-gifs.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+
+<body onLoad="init">
+<div id="sh_container">
+  <div class="stem"></div>
+  <div class="jumbotron sh_jumbotron">
+    <div class="sh_wrapper">
+      <!-- QUESTION 1 -->
+      <div class="sh_question">
+        <!-- alt 1 -->
+        <div class="sh_cbxs">
+          <button type="button" class="accel_btn btn-sm">Accel</button>
+
+          <button type="button" class="brake_btn btn-sm">Brake</button>
+
+          <button type="button" class="re_btn btn-sm">Reset</button>
+
+          <img class="cb_img" src="bus.png" draggable="false" alt="Bus Activity" />
+
+          <img class="cb_accel" src="bus-accel.gif" draggable="false" alt="Bus Activity" />
+          <img class="cb_brake bL" src="brakes-left.gif" draggable="false" alt="Bus Activity" />
+          <input type="checkbox" name="cbx1" class="sh_checkbox" value="value1" answer="false">
+        </div>
+
+        <!-- alt 2 -->
+        <div class="sh_cbxs">
+          <button type="button" class="accel_btn btn-sm">Accel</button>
+
+          <button type="button" class="brake_btn btn-sm">Brake</button>
+
+          <button type="button" class="re_btn btn-sm">Reset</button>
+
+          <img class="cb_img" src="bus.png" draggable="false" alt="Bus Activity" />
+
+          <img class="cb_accel" src="bus-accel.gif" draggable="false" alt="Bus Activity" />
+          <img class="cb_brake bR" src="brakes-right.gif" draggable="false" alt="Bus Activity" />
+          <input type="checkbox" name="cbx1" class="sh_checkbox" value="value1" answer="false">
+        </div>
+        <!-- alt 3 -->
+        <div class="answ_t">
+          <div class="sh_cbxs">
+            <button type="button" class="accel_btn btn-sm">Accel</button>
+
+            <button type="button" class="brake_btn btn-sm">Brake</button>
+
+            <button type="button" class="re_btn btn-sm">Reset</button>
+
+            <img class="cb_img" src="bus.png" draggable="false" alt="Bus Activity" />
+
+            <img class="cb_accel" src="bus-accel.gif" draggable="false" alt="Bus Activity" />
+            <img class="cb_brake bSt" src="brakes-straight.gif" draggable="false" alt="Bus Activity" />
+            <input type="checkbox" name="cbx1" class="sh_checkbox" value="value1" answer="true">
+          </div>
+        </div>
+        <!-- alt 4-->
+        <div class="sh_cbxs">
+          <button type="button" class="accel_btn btn-sm">Accel</button>
+
+          <button type="button" class="brake_btn btn-sm">Brake</button>
+
+          <button type="button" class="re_btn btn-sm">Reset</button>
+
+          <img class="cb_img" src="bus.png" draggable="false" alt="Bus Activity" />
+
+          <img class="cb_accel" src="bus-accel.gif" draggable="false" alt="Bus Activity" />
+          <img class="cb_brake bW" src="brakes-wobble.gif" draggable="false" alt="Bus Activity" />
+          <input type="checkbox" name="cbx1" class="sh_checkbox" value="value1" answer="false">
+        </div>
+        <div>
+          <h4 class="right-answer"><span class="glyphicon glyphicon-ok sh_green"></span><span class="sh_alert">Great job!</span></h4>
+         <!-- <h4 class="wrong-twice"><span class="glyphicon glyphicon-remove sh_red"></span><span class="sh_alert"><strong>Incorrect.</strong></span></h4>-->
+          <h4 class="wrong-answer"><span class="glyphicon glyphicon-remove sh_red"></span><span class="sh_alert">Incorrect. Try again.</span></h4>
+          <h4 class="sh_tool-tip"><span class="glyphicon glyphicon-info-sign sh_yellow"></span><span class="sh_alert">Incorrect. You may need to review this topic.</span></h4>
+        </div>
+
+      </div>
+
+      <!-- End Screen -->
+      <div class="sh_question">
+        <span class="glyphicon glyphicon-ok sh_green"></span>
+        <span class="sh_alert"><strong>Great job! You have completed this activity.</strong></span>
+      </div>
+      <!-- QUESTION ENDED -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

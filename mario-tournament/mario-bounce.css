@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+#am-container {
+  max-width: 900px !important;
+  height: 600px !important;
+  margin: auto 0;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  cursor: default;
+  transition: 0.6s ease-in-out !important;
+}
+
+.am_h1 {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.hovered {
+  background: #eee;
+  opacity: .2;
+  border-radius: 30% !important;
+  background-image: url(sky-hover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.am_img {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  text-align: center;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 100%;
+}
+
+.homie-0 {
+  width: 85.6%;
+}
+
+.homie-1 {
+  width: 100%;
+}
+
+.homie-2 {
+  width: 90%;
+}
+
+.fren-group {
+  display: block;
+  white-space: nowrap !important;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-width: inherit;
+  text-align: left;
+  padding: 5%;
+  padding-top: 1%;
+  margin-top: 5px !important;
+}
+
+.fren-group div.hover {
+  cursor: pointer;
+}
+
+.b4-pickup {
+  display: inline-block !important;
+  cursor: pointer;
+  color: #000 !important;
+  white-space: nowrap;
+  vertical-align: bottom;
+  width: 10%;
+}
+
+.fren-group span.hover {
+  cursor: pointer;
+}
+
+.dropped {
+  position: static !important;
+  width: 35% !important;
+  margin-top: -14.5%;
+}
+
+.droppedOn {
+  position: absolute !important;
+}
+
+.img-wrap {
+  width: 100%;
+  padding: 1%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hotspot-img {
+  /*  max-height: 320px;*/
+}
+
+.hs0,
+.hs1,
+.hs2 {
+  /*  background-color: #ffd700;*/
+  /*  border: 1px inset yellow;*/
+  /*  opacity: .4;*/
+  /*  background-color: transparent;*/
+  width: 5%;
+  position: absolute;
+  cursor: pointer;
+  /*   z-index: 5; */
+  transition: 0.6s ease-in-out;
+  border-radius: 50%;
+}
+
+/* Hotspots*/
+
+.hs0 {
+  height: 48%;
+  top: 35%;
+  left: 10%;
+  width: 26%;
+}
+
+.hs1 {
+  height: 61%;
+  top: 28%;
+  left: 42%;
+  width: 22%;
+}
+
+.hs2 {
+  height: 48%;
+  top: 28%;
+  left: 64.8%;
+  width: 26%;
+}
+
+.mario-last {
+  position: absolute !important;
+  right: 0 !important;
+  top: -30% !important;
+  left: 0 !important;
+  z-index: 1 !important;
+  width: 5%;
+  -webkit-transition: all 0.2s ease-in !important;
+  -moz-transition: all 0.2s ease-in !important;
+  -o-transition: all 0.2s ease-in !important;
+  transition: all 0.2s ease-in !important;
+}
+
+.mario-movin {
+  z-index: 11111111 !important;
+  /*  width: 90% !important;*/
+  /*  -webkit-transition: all 0.5s ease-in !important;
+  -moz-transition: all 0.5s ease-in !important;
+  -o-transition: all 0.5s ease-in !important;
+  transition: all 0.5s ease-in !important;*/
+}
+
+.overlay {
+  opacity: .5;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.homie-overlay {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .5;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bh-btn {
+  font-size: 15px !important;
+  color: #fff !important;
+  background-color: #000 !important;
+  border: 1px #333 outset !important;
+  outline: 0 !important;
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  margin-right: 2%;
+  padding: 3px 5px !important;
+}
+
+.bh-btn span {
+  margin: 5px;
+  font-size: 18px;
+}
+
+.bye-bye {
+  right: 56%;
+  top: 55%;
+  position: absolute;
+  font-size: 15px;
+  color: #000 !important;
+}
+
+.resetbtn {
+  font-size: 30px !important;
+  color: #f0c139 !important;
+  background-color: #e80302 !important;
+  border: 1px #da0e07 outset !important;
+  outline: 0 !important;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  bottom: 3%;
+  right: 2%;
+  padding: 3px 5px !important;
+}
+
+.resetbtn:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.resetbtn svg {
+  vertical-align: 0;
+}
+
+.am_red {
+  color: #df0000;
+}
+
+.am_green {
+  color: #529452;
+}
+
+/* Max Width 565 */
+
+@media only screen and (max-width: 565px) {
+  .bh-btn {
+    font-size: 13px !important;
+  }
+  .bh-btn span {
+    font-size: 13px;
+    margin: 3px;
+  }
+  .bye-bye {
+    font-size: 12px;
+  }
+  .resetbtn {
+    font-size: 20px !important;
+  }
+}
+
+/* Max Width 400 */
+
+@media only screen and (max-width: 400px) {
+  .bh-btn {
+    font-size: 12px !important;
+  }
+  .bh-btn span {
+    font-size: 12px;
+  }
+  .bye-bye {
+    font-size: 10px;
+  }
+  .resetbtn {
+    font-size: 15px !important;
+  }
+}

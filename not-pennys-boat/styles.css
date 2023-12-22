@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-image: url('lg-hatch.jpg');
+    background-position: -30%;
+    background-size: contain;
+  }
+  
+  .slider_container {
+    margin: 0 auto;
+    padding: 25px 0 25px 0;
+    width: 90%;
+    max-width: 380px;
+  }
+  
+  .slider_left_gutter,
+  .slider_right_gutter {
+    position: absolute;
+    height: 4px;
+    top: 18px;
+    border-radius: 2px;
+  }
+  
+  .slider_knob {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: ew-resize;
+    touch-action: none;
+  }
+  
+  .slider_left_gutter,
+  .slider_right_gutter {
+    top: -2px;
+  }
+  
+  .slider_right_gutter {
+    opacity: 0.2;
+  }
+  
+  .slider_knob {
+    left: -20px;
+    top: -20px;
+  }
+  
+  .non-selectable {
+   -webkit-user-select: none;
+   -ms-user-select: none; 
+   user-select: none; 
+  }
+  .drawer_container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 2.3em auto 2em auto;
+    padding: 0;
+    user-select: none;
+  }
+  
+  .drawer_container:after {
+    padding-top: 66%;
+    display: block;
+    content: '';
+  }
+  
+  .drawer_container {
+    max-width: 400px;
+  }
+  
+  .drawer_container:after {
+    padding-top: 100%;
+  }
+  
+  .na_water_slider .slider_left_gutter,
+  .na_water_slider .slider_right_gutter,
+  .na_water_slider .slider_knob {
+    background: #2d4a53;
+  }
+  
+  .canvas_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border: 1px solid #292012;
+    border-radius: 50%;
+  }
+  
+  .npb {
+    position: absolute;
+    width: 135%;
+    transform: scale(.9);
+    top: 3%;
+    left: -30%;
+    opacity: .8;
+    border-radius: 300%;
+    transform: rotate(-5deg);
+    overflow: hidden;
+    animation: slam-animation .2s;
+    animation-iteration-count: 1;
+  }
+  
+  .logo {
+    width: 150px;
+    position: absolute;
+    right: 1%;
+    top: 0;
+  }
+  
+  @keyframes slam-animation {
+    from {
+      opacity: 0;
+      transform: scale(.8);
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,230 @@
+#am-container {
+  max-width: 900px !important;
+  height: 600px !important;
+  margin: auto 0;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  cursor: default;
+  transition: 0.7s ease-in-out;
+}
+
+.stem {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.hovered {
+  background: #eee;
+  opacity: .7;
+  border-radius: 50% !important;
+      background-image: url(white-rabbit.jpg);
+	  background-size: contain;
+/*	  background-repeat: no-repeat;*/
+	  transition: 0.7s ease-in-out;
+}
+
+.sh_img {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  text-align: center;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 100%;
+
+}
+
+.homie-0 {
+  width: 100%;
+/*  margin-top: -20%;*/
+}
+
+.homie-1 {
+  width: 100%;
+}
+
+.homie-2 {
+  width: 100%;
+}
+
+.fren-group {
+/*  display: block;
+  white-space: nowrap !important;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-width: inherit;
+  text-align: right;
+  padding: 5%;*/
+      display: block;
+    white-space: nowrap !important;
+    position: absolute !important;
+    z-index: 1;
+    width: 100%;
+    max-width: inherit;
+    text-align: right;
+    padding: 5%;
+}
+
+.fren-group div.hover {
+  cursor: pointer;
+   
+}
+
+.drag_before {
+  display: inline-block !important;
+  cursor: pointer;
+  color: #000 !important;
+  white-space: nowrap;
+  vertical-align: bottom;
+  width: 14.1%;
+/*      display: block !important;
+    position: absolute !important;
+    cursor: pointer;
+    color: #000 !important;
+    white-space: nowrap;
+    vertical-align: bottom;
+    width: 14.1%;*/
+}
+
+.fren-group span.hover {
+  cursor: pointer;
+}
+
+.dropped {
+  position: static !important;
+  width: 35% !important;
+  margin-top: -15%;
+}
+
+.am_wrong {
+  display: none;
+}
+
+.droppedOn {
+  position: absolute !important;
+}
+
+/*IMAGE POPUPS*/
+
+.img-wrap {
+  width: 100%;
+  padding: 1%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hotspot-img {
+  /*  max-height: 320px;*/
+}
+
+.hs0,
+.hs1,
+.hs2 {
+  width: 5%;
+  position: absolute;
+  cursor: pointer;
+  /*   z-index: 5; */
+  transition: 0.6s ease-in-out;
+  border-radius: 4%;
+
+}
+
+/*START*/
+
+.hs0 {
+  height: 30%;
+  top: 20%;
+  left: 10.5%;
+  width: 34.4%;
+}
+
+.hs1 {
+/*  height: 61%;
+  top: 28%;
+  left: 42%;
+  width: 22%;*/
+    height: 30%;
+  top: 20%;
+  left: 10.5%;
+  width: 34.4%;
+}
+
+.hs2 {
+/*  height: 48%;
+  top: 28%;
+  left: 64.8%;
+  width: 26%;*/
+    height: 30%;
+  top: 20%;
+  left: 10.5%;
+  width: 34.4%;
+}
+
+.resetbtn {
+  margin: 5px;
+}
+
+.am_right,
+.am_wrong {
+  text-align: left;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.am_wrong {
+  position: absolute;
+}
+
+.sh_red {
+  color: #df0000;
+}
+
+.sh_green {
+  color: #529452;
+}
+
+/* Max Width 565 */
+
+@media only screen and (max-width: 565px) {
+  .stem {
+    font-size: 11px;
+  }
+  .am_check:after {
+    background-size: 11px 11px;
+  }
+  .resetbtn {
+    font-size: 11px !important;
+  }
+  .am_right,
+  .am_wrong {
+    font-size: 11px;
+  }
+}
+
+/* Max Width 396 */
+
+@media only screen and (max-width: 396px) {
+  .stem {
+    font-size: 10px;
+  }
+  .am_check:after {
+    background-size: 9px 9px;
+  }
+  .resetbtn {
+    font-size: 10px !important;
+  }
+  .am_right,
+  .am_wrong {
+    font-size: 10px;
+  }
+}

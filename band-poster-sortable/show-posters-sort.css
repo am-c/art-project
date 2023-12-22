@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Gruppo|Iceland|Knewave|Kristi|Sedgwick+Ave+Display|UnifrakturMaguntia|Waiting+for+the+Sunrise');
+img {
+  width: 100%;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  display: inline !important;
+  list-style-type: none !important;
+  -webkit-margin-before: 0 !important;
+  -webkit-margin-after: 0 !important;
+  -webkit-margin-start: 0 !important;
+  -webkit-margin-end: 0 !important;
+  -webkit-padding-start: 0 !important;
+}
+
+#am_container {
+  /*  max-width: 680px !important;
+  max-height: 454px !important;*/
+  max-width: 910px !important;
+  max-height: 600px !important;
+  /* margin: auto 0;*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  cursor: default;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.am_wrapper {
+  width: 100%;
+  position: relative;
+}
+
+
+.am-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#sortable {
+  list-style-type: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+#sortable li {
+  margin: .5%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 9.55%;
+}
+
+
+.am_logo {
+    position: absolute;
+    z-index: 1;
+    width: 9%;
+    right: 48%;
+    top: 30%;
+}
+
+.crate {
+  position: absolute;
+  z-index: 3;
+  width: 16.3%;
+  right: 59.29%;
+  top: 66.9%;
+}
+
+.album {
+  position: absolute;
+  z-index: 3;
+  width: 12.6%;
+  right: 19.81%;
+  top: 67.9%;
+}
+
+/*.player {
+    position: absolute;
+    z-index: 3;
+    width: 18.3%;
+    right: 38.8%;
+    top: 70.6%;
+}*/
+
+.spacer {
+  margin: .5%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 9.55%;
+  background-color: blue;
+}
+.resetbtn {
+    font-size: 20px !important;
+    	color: #000 !important;
+    background-color: #c18d20 !important;
+    border: none !important;
+    outline: 0 !important;
+    font-family: 'Sedgwick Ave Display', cursive;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+
+}
+
+.resetbtn:hover {
+color: #000;
+}
+
+@media only screen and (max-width: 594px) {
+  .resetbtn {
+	  padding: 3px 6px !important;
+    font-size: 14px !important;
+  }
+
+}
+@media only screen and (max-width: 523px) {
+  .resetbtn {
+	  padding: 1px 2px !important;
+    font-size: 13px !important;
+  }
+  }

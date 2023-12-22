@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115340283-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115340283-1');
+</script>
+
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;"/>
+<title>Bar Graph Activity | Checkbox Hover</title>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="bar-graph-cb-hover.js"></script>
+<link rel="stylesheet" type="text/css" href="bar-graph-cb-hover.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+<body onLoad="init()">
+<div id="sh_container">
+
+  <div class="sh_question">
+    <p>Communication Profile - Are you an effective communicator? What are your strengths and
+		weaknesses? Respond to the communication items. Respond by selecting the phrase that best
+		describes you. When you are finished, click the Done button to see your communication
+		profile.</p>
+        
+    <p> Click the numbers below for each question, then click on an answer below the question.</p>
+    <br/>
+    <button style="margin-top: 0 !important;" type="button" class="sh_btn btn btn-primary btn-xs" answer="0">1</button>
+    <button style="margin-top: 0 !important;" type="button" class="sh_btn btn btn-primary btn-xs" answer="1">2</button>
+    <button style="margin-top: 0 !important;" type="button" class="sh_btn btn btn-primary btn-xs" answer="2">3</button>
+    <button style="margin-top: 0 !important;" type="button" class="sh_btn btn btn-primary btn-xs" answer="3">4</button>
+    <button style="margin-top: 0 !important;" type="button" class="sh_btn btn btn-primary btn-xs" answer="4">5</button>
+    <br/> </div>
+  <div class="sh_question q0">
+    <p class="sh_text"> 1. I tend to disagree with those people who don't share my world views and values. </p>
+    <fieldset id="group1">
+      <div class="cb_wrap">
+        <div class="sh_cbxs">
+          <input type="radio" name="group1" id="check1" class="sh_checkbox" answer="0">
+          <label for="check1"></label>Most like me, almost all the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group1" id="check2" class="sh_checkbox" answer="1">
+          <label for="check2"></label>A lot like me, most of the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group1" id="check3" class="sh_checkbox" answer="2">
+          <label for="check3"></label>Not a lot like me, most of the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group1" id="check4" class="sh_checkbox" answer="3">
+          <label for="check4"></label>Least like me, almost all the time </div>
+      </div>
+    </fieldset>
+  </div>
+  <div class="sh_question q1">
+    <p class="sh_text"> 2. I recognize and respect the point of view of others. </p>
+    <fieldset id="group2">
+      <div class="cb_wrap">
+        <div class="sh_cbxs">
+          <input type="radio" name="group2" id="check5" class="sh_checkbox" answer="3">
+          <label for="check5"></label>Most like me, almost all the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group2" id="check6" class="sh_checkbox" answer="2">
+          <label for="check6"></label>A lot like me, most of the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group2" id="check7" class="sh_checkbox" answer="1">
+          <label for="check7"></label>Not a lot like me, most of the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group2" id="check8" class="sh_checkbox" answer="0">
+          <label for="check8"></label>Least like me, almost all the time </div>
+      </div>
+    </fieldset>
+  </div>
+  <div class="sh_question q2">
+    <p class="sh_text"> 3. I think people who live in high crime areas of big cities are most likely criminals. </p>
+    <fieldset id="group3">
+      <div class="cb_wrap">
+        <div class="sh_cbxs">
+          <input type="radio" name="group3" id="check9" class="sh_checkbox" answer="0">
+          <label for="check9"></label>I strongly agree </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group3" id="check10" class="sh_checkbox" answer="1">
+          <label for="check10"></label>I agree </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group3" id="check11" class="sh_checkbox" answer="2">
+          <label for="check11"></label>I disagree </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group3" id="check12" class="sh_checkbox" answer="3">
+          <label for="check12"></label>I strongly disagree </div>
+      </div>
+    </fieldset>
+  </div>
+  <div class="sh_question q3">
+    <p class="sh_text"> 4. I am often able to complete other people's sentences before they finish talking. I may or may not verbally finish their sentence, but mentally I am finishing their sentence/ thought. </p>
+    <fieldset id="group4">
+      <div class="cb_wrap">
+        <div class="sh_cbxs">
+          <input type="radio" name="group4" id="check13" class="sh_checkbox" answer="0">
+          <label for="check13"></label>I do this most of the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group4" id="check14" class="sh_checkbox" answer="1">
+          <label for="check14"></label>I do this some of the time </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group4" id="check15" class="sh_checkbox" answer="2">
+          <label for="check15"></label>I rarely do this </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group4" id="check16" class="sh_checkbox" answer="3">
+          <label for="check16"></label>I never do this </div>
+      </div>
+    </fieldset>
+  </div>
+  <div class="sh_question q4">
+    <p class="sh_text"> 5. My self-confidence is... </p>
+    <fieldset id="group5">
+      <div class="cb_wrap">
+        <div class="sh_cbxs">
+          <input type="radio" name="group5" id="check17" class="sh_checkbox" answer="3">
+          <label for="check17"></label>Very strong - I am a confident person </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group5" id="check18" class="sh_checkbox" answer="2">
+          <label for="check18"></label>Strong - generally I am confident about myself </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group5" id="check19" class="sh_checkbox" answer="1">
+          <label for="check19"></label>So-so - What others say about me affects my confidence level </div>
+        <div class="sh_cbxs">
+          <input type="radio" name="group5" id="check20" class="sh_checkbox" answer="0">
+          <label for="check20"></label>Weak - I am not a confident person </div>
+      </div>
+    </fieldset>
+  </div>
+  <button type="button" class="done-btn btn btn-primary btn-sm">Done</button>
+  <div class="results">
+    <div class="sh_h1">Communications Profile/ Results</div>
+    <div class="top-text">Mouse over each block for a definition of each category. </div>
+    <br clear="all">
+    <div class="bar-graph">
+      <label for="bar-group" class="y-ax m-first">
+        <div class="y-position">100%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">90%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">80%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">70%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">60%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">50%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">40%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">30%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">20%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">10%</div>
+      </label>
+      <label for="bar-group" class="y-ax m-top">
+        <div class="y-position">0%</div>
+      </label>
+      <ul class="bar-group">
+        <li>
+          <div data-percentage="10" class="bar bar0"></div><span>Open <br/> Minded</span>
+        </li>
+        <li>
+          <div data-percentage="10" class="bar bar1"></div><span>Respect <br/> Differences</span>
+        </li>
+        <li>
+          <div data-percentage="10" class="bar bar2"></div><span>Biases/ <br/> Prejudices</span>
+        </li>
+        <li>
+          <div data-percentage="10" class="bar bar3"></div><span>Listening/ <br/> Assumptions</span>
+        </li>
+        <li>
+          <div data-percentage="10" class="bar bar4"></div><span>Self <br/> Confidence</span>
+        </li>
+      </ul>
+      <button type="button" class="reset-btn btn btn-default btn-xs">Reset</button>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
