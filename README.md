@@ -1,5 +1,5 @@
 <h1>Repository of Demos</h1>
-<img src="Ω-images/logo-flat.png">
+<img style="width: 20%" src="Ω-images/logo-flat.png">
 <ul>
 <li>
  <a href="https://am-c.github.io/art-project/3d-transform/"> 3d-transform</a>
