@@ -21,6 +21,7 @@
 </li>
 <li>
 <a href="https://am-c.github.io/art-project/hellobar/">hellobar</a>
+ </li>
 <li>
 <a href="https://am-c.github.io/art-project/image-to-image/">image-to-image</a>
 </li>
