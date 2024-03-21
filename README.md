@@ -36,7 +36,4 @@
 <li>
 <a href="https://am-c.github.io/art-project/not-pennys-boat/">not-pennys-boat</a>
 </li>
-<li>
-<a href="https://am-c.github.io/art-project/Ω-images/">images</a>
-</li>
 </ul>
